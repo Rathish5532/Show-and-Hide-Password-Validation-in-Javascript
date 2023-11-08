@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eye validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="logo">
+       <center> <input type="password" placeholder="password" id="a" style="height: 30px; width: 250px;">
+    <!-- <i class="fa-regular fa-eye" onclick="clickeye()" id="eye"></i> -->
+    <i class="fa-regular fa-eye" onclick="clickeye()" id="eye"></i></center>
+    </div>
+
+    <script>
+        var input_password=document.getElementById("a")
+        var logoeye=document.getElementById("eye")
+        temp=0
+        function clickeye(){
+            if(temp==0){
+                input_password.setAttribute("type","text")
+                logoeye.style.color="blue"
+                temp=1
+            }
+            else{
+                input_password.setAttribute("type","password")
+                logoeye.style.color="black"
+                temp=0
+                
+            }
+        }
+    </script>
+    
+</body>
+</html>
